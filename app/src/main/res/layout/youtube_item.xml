@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:attr/selectableItemBackground"
+    tools:background="@drawable/itemback"
+    android:clickable="true">
+    
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearOne">
+        
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@color/colorPrimary"
+            android:id="@+id/thumbnail"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_bhai"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="3dp"
+            android:text="India is an most loving country"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:id="@+id/title"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:id="@+id/channelTitle"
+                android:text="IndiaLove"
+                android:layout_gravity="left"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:id="@+id/publishtime"
+                android:text="IndiaLove"
+                android:layout_gravity="right"
+                />
+        </LinearLayout>
+
+            
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/linearOne"
+        android:layout_margin="5dp"
+        android:background="@color/grey"/>
+
+
+</RelativeLayout>

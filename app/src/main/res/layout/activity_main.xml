@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/youtubeSearch"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/baloo_bhai"
+        android:layout_margin="10dp"
+        android:background="@drawable/se"
+        android:drawableLeft="@drawable/search"
+        android:drawableTint="@android:color/black"
+        android:padding="5dp"
+        />
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recyclerView"
+         android:layout_marginStart="10dp"
+         android:layout_marginEnd="10dp"
+         android:background="?android:attr/selectableItemBackground"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/youtubeSearch"
+         />
+
+    <include layout="@layout/ghost_layout"
+        android:layout_below="@+id/youtubeSearch"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+    <include layout="@layout/internet_issue"
+        android:layout_below="@+id/youtubeSearch"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+
+</RelativeLayout>
