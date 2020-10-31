@@ -81,9 +81,12 @@ public class MainActivity extends AppCompatActivity {
         {
             internetConnection.setVisibility(View.VISIBLE);
             shimmerLayout.setVisibility(View.GONE);
+            recyclerView.setVisibility(View.GONE);
         }
         else
         {
+        internetConnection.setVisibility(View.GONE);
+        recyclerView.setVisibility(View.VISIBLE);
         shimmerLayout.startShimmerAnimation();
         shimmerLayout.setVisibility(View.VISIBLE);
         final List<Youtube_data> list = new ArrayList<>();
